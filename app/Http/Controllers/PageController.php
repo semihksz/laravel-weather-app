@@ -10,10 +10,9 @@ class PageController extends Controller
     public function index()
     {
         $cities = ['Istanbul', 'Ankara', 'Izmir'];
-
+        $weather_api_key = env('WEATHER_API_KEY');
         foreach ($cities as $city) {
-            $response = Http::get("https://api.weatherapi.com/v1/current.json?key=74f4f86a228d46e29af155721230808&q={$city}&aqi=no");
-
+            $response = Http::get("https://api.weatherapi.com/v1/current.json?key=$weather_api_key&q={$city}&aqi=no");
             $location[$city] = $response['location'];
             $current[$city] = $response['current'];
             $condition[$city] = $response['current']['condition'];

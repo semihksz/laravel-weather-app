@@ -9,7 +9,9 @@ class WeatherApiController extends Controller
 {
     public function locationWeather()
     {
-        $response = Http::get('https://api.weatherapi.com/v1/current.json?key=74f4f86a228d46e29af155721230808&q=Ankara&aqi=no');
+        $weather_api_key = env('WEATHER_API_KEY');
+
+        $response = Http::get("https://api.weatherapi.com/v1/current.json?key=$weather_api_key&q=Ankara&aqi=no");
         return view('pages.search');
     }
 }
