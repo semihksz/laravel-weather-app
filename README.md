@@ -5,7 +5,7 @@
 <p>
     This project is a weather application that allows users to view weather data for a specific location.
     Users can enter the desired city to get the current weather, weather conditions, and a 3-day forecast.
-    The project uses the <a href="https://www.weatherapi.com/">WeatherAPI</a> service to provide up-to-date weather data.
+    The project uses the <a href="https://www.weatherapi.com/" target="_blank">WeatherAPI</a> service to provide up-to-date weather data.
 </p>
 
 <h2 style="color: #333;">Features</h2>
@@ -30,7 +30,7 @@
     <li><strong>Views</strong>: Blade templates that create the user interface.</li>
 </ul>
 
-<img src="public/assets/images/img.jpeg" alt="Weather Application">
+<img src="public/assets/images/img.jpeg">
 
 </body>
 </html>
