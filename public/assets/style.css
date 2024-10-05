@@ -1,0 +1,182 @@
+body {
+    background: #f8f9fa;
+    color: #444;
+    font-family: "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 700;
+}
+
+/*--------------------------------------------------------------
+# Weather Card
+--------------------------------------------------------------*/
+.weather__card {
+    max-width: 800px;
+    padding: 40px 30px;
+    background-color: #e0f7fa;
+    border-radius: 20px;
+    color: #e3f2fd;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather__card h2 {
+    font-size: 120px;
+    font-weight: 700;
+    color: #3c4048;
+    line-height: 0.8;
+}
+
+.weather__card h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 0.8;
+    color: #3c4048;
+}
+
+.weather__card h4 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 0.8;
+    color: #3c4048;
+}
+
+.weather__card h5 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 0.1;
+    color: #9d9d9d;
+}
+
+.weather__card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.weather__card .weather__description {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 5px 13px;
+    border: 0;
+    outline: none;
+    color: #7f8487;
+    font-size: 0.956rem;
+    font-weight: 400;
+}
+
+/*--------------------------------------------------------------
+# Weather Status
+--------------------------------------------------------------*/
+.weather__status {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.weather__status img {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.weather__status span {
+    font-weight: 500;
+    color: #3c4048;
+    font-size: 0.9rem;
+    padding-left: 0.5rem;
+}
+
+/*--------------------------------------------------------------
+# Weather Forecast
+--------------------------------------------------------------*/
+.weather__forecast {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.weather__forecast img {
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+}
+
+.weather__forecast span {
+    font-weight: 500;
+    color: #3c4048;
+    font-size: 1rem;
+    padding: 5px 10px;
+}
+
+/* Responsive ayarlamalar */
+@media (max-width: 1024px) {
+    .weather__card {
+        padding: 30px 20px;
+    }
+
+    .weather__card h2 {
+        font-size: 80px;
+    }
+
+    .weather__card h3 {
+        font-size: 30px;
+    }
+
+    .weather__card h5 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .weather__card {
+        padding: 20px 10px;
+        width: 90%;
+    }
+
+    .weather__card h2 {
+        font-size: 60px;
+    }
+
+    .weather__card h3 {
+        font-size: 24px;
+    }
+
+    .weather__card h5 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .weather__card {
+        padding: 15px;
+        width: 95%;
+    }
+
+    .weather__card h2 {
+        font-size: 40px;
+    }
+
+    .weather__card h3 {
+        font-size: 20px;
+    }
+
+    .weather__card h5 {
+        font-size: 14px;
+    }
+}
